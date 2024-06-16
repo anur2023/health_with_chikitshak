@@ -1,0 +1,2 @@
+*** Let's setup the color for the project from figma files.
+## Let's use the color

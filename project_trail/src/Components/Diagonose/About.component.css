@@ -1,0 +1,14 @@
+.carouselImg {
+  max-width: 90%;
+  max-height: 80vh;
+  margin-top: 800px;
+  margin: auto;
+}
+
+.carousel-item {
+  transition: transform 0.3s ease;
+}
+
+.carousel-item {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

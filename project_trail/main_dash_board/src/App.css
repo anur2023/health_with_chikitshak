@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+header{
+  z-index: 10001 !important;
+}
+.btn-primary {
+  @apply px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralDGrey transition-all duration-300 hover:-translate-y-4;
+}
+.imgSize{
+  height: 150px;
+  width: 150px;
+}
+.aboutimg{
+  height: auto;
+  max-width: 400px;
+}
+.aboutimgs{
+  height: 40px;
+  width: 40px;
+}
+.blogsize{
+  height: 300px;
+  width: 300px;
+}

@@ -1,0 +1,35 @@
+.ant-steps.ant-steps-horizontal {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ant-steps-item {
+    flex: 1;
+  }
+  
+  .select-date {
+    cursor: pointer;
+  }
+  
+  /* Default state */
+  .select-date {
+    background-color: #fff; /* Set default background color */
+  }
+  
+  /* When card is clicked and in focus */
+  .select-date:focus {
+    outline: none; /* Remove default focus outline */
+    background-color: blue; /* Change background color when focused */
+  }
+  
+  /* When card is active (being clicked) */
+  .select-date:active {
+    background-color: blue; /* Change background color when active */
+  }
+  
+  /* Reset other cards when one is clicked */
+  .select-date:focus+.select-date,
+  .select-date:active+.select-date {
+    background-color: #fff; /* Reset background color of other cards */
+  }
+  

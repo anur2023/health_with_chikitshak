@@ -1,0 +1,392 @@
+/* Replace <uniquifier> with an appropriate descriptive class name */
+.montserrat-heading {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Replace <weight> with a value between 100 and 900 */
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root {
+    /* Define variables for commonly used colors */
+    --primary-color: #007bff; /* Default primary color */
+    --secondary-color: #6c757d; /* Default secondary color */
+    --background-color: #ffffff; /* Default background color */
+    --text-color: #000000;
+    --hover-color:#ADD8E6;
+    --black-color:#000000;
+    /* Default text color */
+  
+    /* Define variables for commonly used font properties */
+    --font-family: Arial, sans-serif; /* Default font family */
+    --font-size-base: 16px; /* Base font size */
+    --line-height-base: 1.5; /* Base line height */
+  
+    /* Typography settings */
+    --heading-font-family: var(--font-family); /* Heading font family */
+    --heading-font-weight: bold; /* Heading font weight */
+    --heading-line-height: 1.2; /* Heading line height */
+    --heading-margin-bottom: 0.5em; /* Margin bottom for headings */
+  
+    --body-font-family: var(--font-family); /* Body font family */
+    --body-font-weight: normal; /* Body font weight */
+    --body-line-height: var(--line-height-base); /* Body line height */
+  }
+   
+  .flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    // display: grid;
+    align-items: center;
+    gap: 1.5rem;
+}
+html{
+    font-size: 90%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.icon{
+    font-size: var(--h2FontSize);
+}
+img, video{
+    height: auto;
+    width: 100%;
+}
+.message{
+    display: none;
+}
+
+.showMessage{
+    display: block;
+    color: var(--background-color);
+    background: rgb(247, 20, 20);
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+}
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    color: var(--greyText);
+}
+.btn .icon{
+    margin-left: 5rem;
+
+}
+.btn:hover{
+    color: var(--primary-color);
+    background: var(--pale-green);
+}
+.loginPage,.registerPage{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 7px 50px rgb(214, 223,213);
+
+    .container{
+        height: 90vh;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        border-radius: 10px;
+        background: hsl(0, 0%, 95%);
+
+        .videoDiv{
+            position: relative;
+            display: flex;
+            flex-basis: 50%;
+            width: 70%;
+            height: 100%;
+            padding: 0 1.5rem;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            
+           
+         video,.footerDiv{
+                position: absolute;
+            }
+            video{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+
+            }
+            .textDiv{
+                position: relative;
+                .title{
+                    color: var(--whiteColor);
+                    font-size: 35px;
+                    font-weight: 800;
+                }
+                p{
+                    color: var(--whiteColor);
+                    padding: 1rem;
+                    font-size: 40px;
+                    font-weight: 400;
+                }
+            }
+            .footerDiv{
+                bottom: 10px;
+                padding: 0 1rem;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.248);
+                left: 10px;
+                right: 10px;
+                justify-content: space-between;
+                backdrop-filter: blur(1px);
+                border-radius: 10px;
+
+                .text{
+                    color: var(--whiteColor);
+
+                }
+                .btn{
+                padding: .6rem;
+                background: var(--background-color);
+                border-radius: 10px;
+                color: var(--primary-color);
+                align-items: center;
+                margin: 3px;
+                justify-content: center;
+                font-size: 25px;
+                font-weight: 600;
+                    &:hover{
+                        background: var(--hover-color);
+                        color: var(--black-color);
+                    }
+                }
+            }
+
+
+        }
+        .formDiv{
+            flex-basis: 50%;
+            margin: auto;
+            flex-direction: column;
+            gap: 1.5rem;
+            transform: translateY(-1rem);
+
+            .headerDiv{
+                text-align: center;
+                padding: 1.5rem 0;
+
+                img{
+                    width: 60px;
+                    padding-bottom: .5rem;
+                }
+                h3{
+                    font-size: 25px;
+                    color: var(--black-color);
+                    font-weight: 600;
+                }
+            }
+            .form{
+                gap: 1rem;
+
+            .inputDiv{
+                .icon{
+                    color: var(--grey-text);
+                }
+                input{
+                    background: none;
+                    outline: none;
+                    border: none;
+                    width: 200px;
+                }
+                label{
+                    // color: var(--background-color);
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: .5rem 0;
+                    display: block;
+                }
+                .input{
+                    gap: .5rem;
+                    padding: 1rem;
+                    background: var(--background-color);
+                    border: radius 10px;;
+                }
+            }
+            .btn{
+                padding: .6rem;
+                background: var(--primary-color);
+                border-radius: 10px;
+                color: var(--background-color);
+                align-items: center;
+                margin: auto;
+                justify-content: center;
+                font-size: 16px;
+                width: 100%;
+                gap: .5rem;
+                transition: .3s ease;
+
+                .icon{
+                    font-size: 25px;
+                    transition: .3s ease;
+                }
+                &:hover{
+                    background: var(--hover-color);
+                    color: var(--black-color);
+                    .icon{
+                        color: var(--black-color);
+                        transform: translateX(5px);
+                    }
+                }
+            }
+            .forgotPassword{
+                font-size: 13px;
+                color: var(--black-color);
+                opacity: .7;
+                text-align: center;
+                a{
+                    text-decoration: underline;
+                    cursor: pointer;
+                    opacity: 1;
+                }
+            }
+            }
+        }
+    }
+}
+
+
+@media  screen and (max-width: 602px) {
+    .loginPage, .registerPage{
+        .container{
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            padding: 1.5rem;
+
+            .videoDiv{
+                width: 100%;
+                .textDiv{
+                    .title{
+                        font-size: 20px;
+                    }
+                    p{
+                        padding: 1rem;
+                    }
+                }
+                .footerDiv{
+                    .text{
+                        font-size: 12px;
+                    }
+                    .btn{
+                        padding: .4rem 1.5rem;
+                    }
+                }
+            }
+            .formDiv{
+                gap: 1rem;
+                transform: translateY();
+
+                .headerDiv{
+                    padding: 1rem 0;
+                    img{
+                        width: 40px;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+                .form{
+                    gap:.5rem ;
+
+                    .inputDiv{
+                        input{
+                            width: 100%;
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 672px) {
+    .loginPage, .registerPage{
+        .container{
+            // height: 100%;
+            // width: 100%;
+            // flex-direction: column;
+            // padding: 1.5rem;
+
+            .videoDiv{
+                // width: 100%;
+                .textDiv{
+                    .title{
+                        font-size: 25px;
+                    }
+                    p{
+                        padding: 1rem;
+                    }
+                }
+                .footerDiv{
+                    .text{
+                        font-size: 12px;
+                    }
+                    .btn{
+                        padding: .8rem 1.5rem;
+                    }
+                }
+            }
+            .formDiv{
+                // gap: 1rem;
+                // transform: translateY();
+
+                .headerDiv{
+                    padding: 1.5rem 0;
+                    // img{
+                    //     width: 40px;
+                    // }
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+                .form{
+                    // gap:.5rem ;
+
+                    .inputDiv{
+                        input{
+                            width: 100%;
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 927px) {
+    .loginPage, .registerPage{
+        .container{
+            width: 85%;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  z-index: 10001 !important;
+  
+}
+
+
+.btn-primary {
+  padding: 0.5rem 1.75rem; /* Equivalent to px-7 py-2 */
+  background-color: #4CAF4F; /* Equivalent to bg-brandPrimary */
+  color: #ffffff; /* Equivalent to text-white */
+  border-radius: 0.375rem; /* Equivalent to rounded */
+  transition: all 300ms; /* Equivalent to transition-all duration-300 */
+}
+
+.btn-primary:hover {
+  background-color: #4D4D4D; /* Equivalent to hover:bg-neutralDGrey */
+  transform: translateY(-4px); /* Equivalent to hover:-translate-y-4 */
+}
+
+.imgSize {
+  height: 150px;
+  width: 150px;
+  transition: all 0.3s ease; /* Add transition effect for smooth hover */
+}
+
+.imgSize:hover {
+  transform: scale(1.5); /* Increase size by 20% */
+  border-radius: 50%; /* Make the image rounded */
+}
+.imgSizes{
+  height: 220px;
+  width: 180px;
+  transition: all 0.3s ease;
+}
+.imgSizes:hover{
+  transform: scale(1.2); /* Increase size by 20% */
+  border-radius: 50%; 
+}
+figcaption{
+  margin-top: 25px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+
+.aboutimg {
+  height: auto;
+  max-width: 400px;
+}
+
+.aboutimgs {
+  height: 40px;
+  width: 40px;
+}
+
+.blogsize {
+  height: 300px;
+  width: 300px;
+}
